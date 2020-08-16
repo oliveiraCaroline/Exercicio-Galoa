@@ -1,0 +1,413 @@
+*{
+	margin:0px;
+	box-sizing: border-box;
+	padding: 0px;
+	color: rgb(99 99 99);
+}
+
+:root{
+	--mainColor: rgb(252 131 39);
+	--secondColor: rgb(253 209 182 / 34%);
+}
+
+body{
+	display: grid;
+	grid-template-columns: 15% 85%;
+	grid-template-rows: 80px 800px;
+	height: 200vh;
+	width:99%;
+}
+
+.tela-central{
+	display: grid;
+	grid-template-columns: 76% 22%;
+	grid-template-rows: 550px 500px;
+}
+
+h3, h2, h1, p ,li, label, a{
+	font-family: "arial";
+}
+
+a{
+	color: var(--mainColor);
+	font-size:13px;
+}
+
+#titulo-cabecalho1{
+ background-image: linear-gradient(to bottom, rgb(255 169 0), rgb(252 121 50));
+}
+
+#titulo-cabecalho2{
+	background: var(--secondColor);
+	padding-left: 35px;
+	display: flex;
+    align-items: center;
+
+}
+
+#menu-lateral li{
+	padding: 6px 30px;
+    border-bottom: 2px solid rgb(230 230 230);
+	font-size: 16px;
+    color: rgb(128 128 128);
+	cursor:pointer;
+}
+
+#menu-lateral li:hover{
+	background: var(--secondColor);
+}
+
+#titulo-cabecalho1{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo-cabecalho1,.tela-esquerda{
+	box-shadow: 2px 0px 3px 0px rgb(232 232 232);
+}
+
+#title1{
+	font-size: 30px;  
+    color: rgb(255 255 255);
+    font-weight: 700;
+}
+
+#title2{
+	font-weight:100;
+	font-size:22px;
+}
+
+.sub-title2{
+	font-size: 15px;
+	line-height: 25px;
+}
+
+#coluna-centro, #area-resumo-discussoes{
+	padding: 15px 0 0 33px;
+}
+
+#coluna-centro .title3{
+	padding-left:10px;
+}
+
+
+.title3{
+	color: var(--mainColor);
+    font-size: 20px;
+	padding-bottom:15px;
+	line-height:25px;
+}
+
+.topo-info {
+	background: var(--secondColor);
+	font-size:12px;
+	padding: 10px 15px;
+}
+
+.box-info p{
+	padding: 15px;
+}
+
+.box-info{
+	border-radius: 5px 5px 0 0;
+    border: 1px solid rgb(222 222 222);
+	margin-bottom: 50px;
+}
+
+#coluna-direita{
+	padding-top:15px;
+}
+
+.acoes-topo-pagina{
+	padding:0px 15px;
+	background:var(--mainColor);
+	color: #fff;
+	font-size:16px;
+	border:0;
+	border-radius:5px;
+	height:33px;
+	
+}
+
+.icon-topo-pagina{
+	color:#fff;
+	font-size:21px;
+}
+
+#icon-doi-topo-pagina{
+    color: var(--mainColor);
+    list-style-type: none;
+    background: rgb(255 255 255);
+    border-radius: 50%;
+    padding: 3px 2px;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+#citar-detalhes{
+	line-height: 42px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--mainColor);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#btn-p{
+	    margin-left: 15px;
+}
+
+.texto-detalhes{
+	padding:15px;
+}
+
+.texto-detalhes li{
+	list-style-type:none;
+	line-height:25px;
+}
+
+#texto-detalhes li{
+	font-size:12px;
+}
+
+#area-resumo-discussoes{
+	grid-column:1/3;
+}
+
+#area-resumo-discussoes .title3{
+	font-size: 18px;
+    font-weight: 600;
+}
+
+
+#continua-texto{
+	display:none;
+}
+
+#leia-mais{
+	color:rgb(252 121 50);
+	cursor:pointer;
+	font-weight: 700;
+}
+
+
+#topico1, #topico3{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	padding: 15px;
+}
+
+.btn{
+	 background-image: linear-gradient(to bottom, rgb(255 169 0), rgb(252 121 50));
+	 font-weight: 700;
+	 color: rgb(255 255 255);
+	 cursor: pointer;
+	 border: 0;
+}
+
+
+#btn-criar-topico, #btn-novo-topico{
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 136px;
+    font-size: 15px; 
+    position: relative;
+	top: 33px;
+	 margin-bottom: 15px;
+}
+
+#btn-novo-topico{
+	width: 220px;
+}
+
+#topico2{
+	padding: 15px;
+	/*display:none;*/
+}
+
+#form-discussoes{
+	display: flex;
+    flex-direction: column;
+}
+
+#form-discussoes input{
+	padding: 10px 15px;
+}
+
+#rodape-text-form{
+	display: flex;
+    height: 32px;
+    border: 1px solid;
+    border-top: 0;
+    border-radius: 0px 0px 3px 3px;
+}
+
+#faixa-cinza{
+	flex:5 0 auto;
+    background: rgb(222 231 236 / 62%);
+	display: flex;
+    align-items: center;
+
+}
+
+#faixa-cinza span{
+	font-weight: 900;
+    font-style: italic;
+    font-family: monteserrat;
+    padding-left: 15px;
+
+}
+
+#btn-enviar{
+	flex:1 0 auto;
+}
+
+.box-comentarios{
+    box-shadow: 0px 0px 4px 0px grey;
+    padding: 15px 15px;
+    border-radius: 5px;
+	margin:15px;
+}
+
+.box-info .box-comentarios p{
+    padding: 0px;
+    line-height: 27px;
+    font-size: 15px;
+}
+
+hr{
+    width: 100%;
+    top: 53px;
+    position: relative;
+}
+
+.fundo-icon{
+	padding: 2px 7px;
+    background: rgb(253 128 43);
+    border-radius: 3px;
+	display:inline-block;
+	color:#fff;
+	
+}
+
+.icon-branco{
+	color:#fff;
+	font-size:13px !important;
+}
+
+.nome-comentario{
+	font-size: 12px;
+    font-weight: 600;
+}
+
+#acoes-comentario{
+	display: flex;
+    align-items: center;
+    padding-top: 12px;
+}
+
+#acoes-comentario span{
+	
+color: rgb(154 154 154);
+}
+
+#acoes-comentario span, #acoes-comentario img, #acoes-comentario .fundo-icon{
+	margin-right: 10px;
+}
+
+#feedback p{
+	font-weight:600!important;
+}
+#feedback{
+    flex-direction: column;
+    align-items: center;
+    top: -37px;
+    position: relative;
+    margin-top: -93px;
+}
+
+#feedback i{
+	font-size:28px;
+}
+
+
+#topico4::before{
+	content: "";
+    background: rgb(241 241 241 / 82%);
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    border-radius: 5px;
+    margin-top: -15px;
+}
+
+.autor-coautor{
+    background: rgb(236 236 236 / 52%);
+	padding: 15px 0;
+	border-bottom:1px solid rgb(222 222 222);;
+	border-top:1px solid rgb(222 222 222);;
+	margin: 12px 0;
+	
+}
+
+#box3 {
+	padding: 15px 0 0;
+}
+
+#box3 p, #box3 .title3, #box3 .acoes-comentario{
+	padding:0 15px!important;
+}
+
+.topo-autor-coautor{
+	display:flex;
+	align-items:center;
+}
+
+.icon-autor-coautor{
+	display:flex;
+	align-items:center;
+	float:right;
+	justify-content:flex-end;
+	flex: 1 0 auto;
+    padding-right: 15px;
+	
+}
+
+.icon-autor-coautor p, .icon-autor-coautor i{
+	color: var(--mainColor);
+	font-weight:700;
+}
+
+#email-usuario{
+	flex: 1 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+	text-align: right;
+	font-size: 14px;
+}
+
+.li-texto-detalhes{
+	font-size:15px;
+}
+
+#universidades-detalhes{
+	overflow:auto; 
+	padding: 15px;
+	list-style-type:none;
+}
+
+#universidades-detalhes li{
+	font-size: 12px;
+    color: rgb(183, 171, 171)!important;
+}
+
+#universidades-detalhes sup{
+	font-size:7px;
+	    color: rgb(183, 171, 171)!important;
+}
