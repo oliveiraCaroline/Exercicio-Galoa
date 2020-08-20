@@ -5,6 +5,7 @@
 	color: rgb(99 99 99);
 }
 
+
 :root{
 	--mainColor: rgb(252 131 39);
 	--secondColor: rgb(253 209 182 / 34%);
@@ -12,29 +13,36 @@
 
 body{
 	display: grid;
-	grid-template-columns: 15% 85%;
-	grid-template-rows: 80px 800px;
+	grid-template-columns: 219px 1131px;
+	grid-template-rows: 80px 1520px 200px;
 	height: 200vh;
 	width:99%;
 }
 
 .tela-central{
 	display: grid;
-	grid-template-columns: 76% 22%;
+	grid-template-columns: 76% 21.5%;
 	grid-template-rows: 550px 500px;
 }
 
 h3, h2, h1, p ,li, label, a{
-	font-family: "arial";
+	font-family: 'Quicksand', sans-serif;
+}
+
+#title1, #titulo-cabecalho2 .sup-title2, #titulo-cabecalho2 #title2, #topo-info h2, #citar-detalhes, #coluna-centro h2{
+	font-family: 'arial'!important;
 }
 
 a{
 	color: var(--mainColor);
-	font-size:13px;
+	font-size:14px;
 }
 
 #titulo-cabecalho1{
- background-image: linear-gradient(to bottom, rgb(255 169 0), rgb(252 121 50));
+	background-image: linear-gradient(to bottom, rgb(255 169 0), rgb(252 121 50));
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #titulo-cabecalho2{
@@ -48,23 +56,20 @@ a{
 #menu-lateral li{
 	padding: 6px 30px;
     border-bottom: 2px solid rgb(230 230 230);
-	font-size: 16px;
-    color: rgb(128 128 128);
-	cursor:pointer;
+    font-size: 15px;
+    color: rgb(125 120 120);
+    cursor: pointer;
+    font-weight: 600;
 }
+
 
 #menu-lateral li:hover{
 	background: var(--secondColor);
 }
 
-#titulo-cabecalho1{
-	display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #titulo-cabecalho1,.tela-esquerda{
 	box-shadow: 2px 0px 3px 0px rgb(232 232 232);
+	
 }
 
 #title1{
@@ -84,7 +89,7 @@ a{
 }
 
 #coluna-centro, #area-resumo-discussoes{
-	padding: 15px 0 0 33px;
+	padding: 18px 0 0 33px;
 }
 
 #coluna-centro .title3{
@@ -95,7 +100,7 @@ a{
 .title3{
 	color: var(--mainColor);
     font-size: 20px;
-	padding-bottom:15px;
+	padding-bottom:18px;
 	line-height:25px;
 }
 
@@ -113,6 +118,7 @@ a{
 	border-radius: 5px 5px 0 0;
     border: 1px solid rgb(222 222 222);
 	margin-bottom: 50px;
+	    font-size: 15px;
 }
 
 #coluna-direita{
@@ -120,7 +126,7 @@ a{
 }
 
 .acoes-topo-pagina{
-	padding:0px 15px;
+	padding:0px 12.5px;
 	background:var(--mainColor);
 	color: #fff;
 	font-size:16px;
@@ -151,11 +157,11 @@ a{
     font-size: 13px;
     color: var(--mainColor);
     font-weight: 600;
-    letter-spacing: 1px;
+	letter-spacing:0.4px;
 }
 
 #btn-p{
-	    margin-left: 15px;
+	    margin-left: 26px;
 }
 
 .texto-detalhes{
@@ -164,7 +170,7 @@ a{
 
 .texto-detalhes li{
 	list-style-type:none;
-	line-height:25px;
+	line-height:18px;
 }
 
 #texto-detalhes li{
@@ -176,7 +182,7 @@ a{
 }
 
 #area-resumo-discussoes .title3{
-	font-size: 18px;
+	font-size: 16px;
     font-weight: 600;
 }
 
@@ -208,15 +214,25 @@ a{
 	 border: 0;
 }
 
+.btn span{
+	font-size: 37px;
+    font-weight: 100;
+    color: rgb(255 255 255);
+    padding-right: 5px;
+}
+
 
 #btn-criar-topico, #btn-novo-topico{
-    padding: 10px 15px;
-    border-radius: 5px;
-    width: 136px;
-    font-size: 15px; 
+   border-radius: 5px;
+    width: 147px;
+    font-size: 15px;
     position: relative;
-	top: 33px;
-	 margin-bottom: 15px;
+    top: 33px;
+    margin-bottom: 15px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #btn-novo-topico{
@@ -275,7 +291,7 @@ a{
 .box-info .box-comentarios p{
     padding: 0px;
     line-height: 27px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 hr{
@@ -299,7 +315,7 @@ hr{
 }
 
 .nome-comentario{
-	font-size: 12px;
+	font-size: 11px!important;
     font-weight: 600;
 }
 
@@ -393,7 +409,7 @@ color: rgb(154 154 154);
 }
 
 .li-texto-detalhes{
-	font-size:15px;
+	font-size:14px;
 }
 
 #universidades-detalhes{
@@ -405,9 +421,42 @@ color: rgb(154 154 154);
 #universidades-detalhes li{
 	font-size: 12px;
     color: rgb(183, 171, 171)!important;
+	line-height:14px;
 }
 
-#universidades-detalhes sup{
+#universidades-detalhes sup, .li-texto-detalhes sup{
 	font-size:7px;
-	    color: rgb(183, 171, 171)!important;
+	color: rgb(183, 171, 171)!important;
+}
+
+footer{
+	grid-column: 2/3;
+    margin: 0 15px;
+    display: flex;
+    border-top: 1px solid rgb(222 222 222);
+}
+
+#logo-botao{
+	display:flex;
+	flex-direction:column;
+}
+
+#texto-footer{
+	padding: 18px 14px;
+    font-size: 15px;
+}
+
+#btn-footer{
+	height: 35px;
+    border: 0;
+    background: rgb(113 71 142);
+    color: rgb(255 255 255);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+#form-discussoes .title3{
+	    padding: 18px 0 0 0;
 }
