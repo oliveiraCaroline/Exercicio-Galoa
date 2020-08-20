@@ -29,8 +29,16 @@ h3, h2, h1, p ,li, label, a{
 	font-family: 'Quicksand', sans-serif;
 }
 
+#title1, #titulo-cabecalho2 .sup-title2, #titulo-cabecalho2 #title2{
+	font-weight:500;
+}
+
 #title1, #titulo-cabecalho2 .sup-title2, #titulo-cabecalho2 #title2, #topo-info h2, #citar-detalhes, #coluna-centro h2{
-	font-family: 'arial'!important;
+	font-family: 'Lato', sans-serif!important;
+}
+
+topo-info h2, #citar-detalhes, #coluna-centro h2{
+	font-weight:bolder;
 }
 
 a{
