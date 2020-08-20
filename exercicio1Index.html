@@ -7,7 +7,10 @@
 		<link rel="stylesheet" type="text/css" href="exercicio1.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
+		</style>
 	</head>
 	
 	<body>
@@ -37,7 +40,7 @@
 			<!-- Div com Logo SLACA e menu Lateral esquerdo, abaixo do cabeçalho esquerdo-->
 			<div class="tela-esquerda">
 				<div id="logo">
-					<img src="Exercicio-Galoa\logo_SLACA.png"/>
+					<img src="Exercicio-Galoa\logo_SLACA3.png"/>
 				</div>
 
 				<ul id="menu-lateral">
@@ -54,7 +57,7 @@
 			<div class="tela-central">
 				<div id="coluna-centro"> <!-- Parte da tela que contém Vídeo -->	
 					<h2 class="title3" >Análise senrorial de preparações funcionais desenvolvidas para escolares <br> entre 09 e 15 anos, do município de Campinas </h2>
-					<!--<iframe width="853" height="300px" src="https://www.youtube.com/embed/D5YvsG_4-yo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+					
 					<img src="Exercicio-Galoa\frame_video.png"/>
 				</div> <!-- Término da parte do Vídeo -->	
 				
@@ -73,15 +76,17 @@
 						
 						<ul class="texto-detalhes" id="texto-detalhes">
 							<li>Tipo de Apresentação: <strong>Pôster </strong> </li>
-							<li>Eixo temático: <strong>Alimentação e saúde </strong> </li>
+							<li>Eixo temático: <strong>Alimentação e saúde (AS) </strong> </li>
 							<li>Palvras-Chaves: <strong>Alimentos funcionais, alimentação escolar </strong> </li>
 						</ul>
 							
 						<ul class="texto-detalhes">
 							<li><strong> Autores </strong></li>
-							<li class="li-texto-detalhes">Galileo Galilei</li>
-							<li class="li-texto-detalhes"> Berta Lange de Morretes</li>
-							<li class="li-texto-detalhes"> Berta Lange de Morretes</li>
+							<li class="li-texto-detalhes">Galileo Galilei<sup> 1</sup></li>
+							<li class="li-texto-detalhes"> Berta Lange de Morretes<sup> 2</sup></li>
+							<li class="li-texto-detalhes"> Isaac Newton <sup> 3</sup></li>
+							<li class="li-texto-detalhes">Cesar Lates <sup> 1</sup></li>
+							<li class="li-texto-detalhes">Stephen Hawking<sup> 4</sup></li>
 						</ul>
 						
 						<ul id="universidades-detalhes">
@@ -140,11 +145,11 @@
 							<p> Deixe seus questionamentos para os outros autores</p>
 						
 							<hr/> 
-							<button class="btn" id="btn-criar-topico" type="supmit"> + Criar Tópico</button>
+							<button class="btn" id="btn-criar-topico" type="submit"> <span> + </span> criar tópico</button>
 						</div>
 						
 						<div style="display:none;" id="topico2"> <!-- Div para enviar comentarios-->
-							<p> Tem alguma dúvida ou sugestão? Compartilhe seu feedback com os autores! </p>
+							<center> <p> Tem alguma dúvida ou sugestão? Compartilhe seu feedback com os autores! </p></center>
 							<form id="form-discussoes">
 								<label class="title3" > Assunto</label>
 								<input placeholder="Defina um tópico para notificar os autores" type="text"> </input> 
@@ -154,7 +159,7 @@
 							 </form>
 							<div id="rodape-text-form">
 								<div id="faixa-cinza"><span> B </span> <span> I </span> </div>
-								<button class="btn" id="btn-enviar" type="supmit"> Enviar </button>
+								<button class="btn" id="btn-enviar" type="submit"> Enviar </button>
 							</div>
 								
 							
@@ -167,7 +172,7 @@
 							<a href="#"> Descubra outros trabalhos</a>
 					
 							<hr/> 
-							<button class="btn" id="btn-novo-topico" type="supmit" onclick="NovoTopico()"> Criar Novo Tópico</button>
+							<button class="btn" id="btn-novo-topico" type="submit" onclick="NovoTopico()"> criar novo tópico</button>
 						</div>
 						
 						<div style="filter: blur(1.5px); display:none;" class="box-comentarios" id="topico4"><!-- Aguardando Feedback-->
@@ -285,6 +290,21 @@
 				
 			</div>
 			
+			<footer>	
+				<div id="logo-botao">
+					<img src="Exercicio-Galoa\logo_galoa.png"/>
+					<button id="btn-footer"> Saiba Mais</button>
+				</div>
+				
+				<div id="texto-footer">
+					<p> <strong> Preservar a memória do evento e ampliar o acesso ao conhecimento científico </strong> gerado em eventos é a razão de ser
+					da plataforma  Galoá Proceedings. </p> <br>
+					<p> Os trabalhos publicados aqui têm maior alcance e ficam disponíveis para toda a comunidade, mantendo aceso o debate científico
+					fomentado pelos encontros e aumentando o impacto do evento.</p>
+				</div>
+				
+			</footer>
+			
 		<script>
 				var lerMais = document.getElementById("leia-mais");
 				var texto = document.getElementById("continua-texto");
@@ -299,7 +319,6 @@
 				var topico1 = document.getElementById("topico1");
 				var btnCriarTopico = document.getElementById("btn-criar-topico");
 				var topico2 = document.getElementById("topico2");
-
 				
 				btnCriarTopico.onclick = function(){
 					topico2.style.display = "block";
